@@ -4,51 +4,61 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Yana | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>Yana</h1>
-    <p>Entry-Level IT / Software Professional</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-gray-900 text-white p-6 text-center shadow-md">
+    <h1 class="text-4xl font-bold">Yana</h1>
+    <p class="text-lg mt-2">Entry-Level IT / Software Professional</p>
+    <nav class="mt-4 space-x-6 text-sm">
+      <a href="#about" class="hover:text-teal-400">About</a>
+      <a href="#projects" class="hover:text-teal-400">Projects</a>
+      <a href="#resume" class="hover:text-teal-400">Resume</a>
+      <a href="#contact" class="hover:text-teal-400">Contact</a>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I’m a recent computer science graduate with a passion for IT, software development, and solving real-world problems. I’m currently seeking an opportunity to grow in the tech industry.</p>
+  <!-- About Section -->
+  <section id="about" class="p-8 bg-white text-center">
+    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+    <p class="text-lg max-w-2xl mx-auto">I like sushi and cats.</p>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project Name</h3>
-      <p>A short description of the project. What it does, what tech you used (HTML, CSS, JS, etc).</p>
-      <a href="https://github.com/yourusername/project" target="_blank">View on GitHub</a>
+  <!-- Projects Section -->
+  <section id="projects" class="p-8 bg-gray-50">
+    <h2 class="text-3xl font-semibold text-center mb-6">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-xl font-bold mb-2">Project Name</h3>
+        <p class="mb-4">A short description of the project. JS, etc.</p>
+        <a href="https://github.com/yourusername/project" target="_blank" class="text-teal-600 hover:underline">View on GitHub</a>
+      </div>
+      <!-- Add more project cards like this -->
     </div>
-    <!-- Add more projects here -->
   </section>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <a href="assets/resume.pdf" target="_blank">View My Resume</a>
+  <!-- Resume Section -->
+  <section id="resume" class="p-8 bg-white text-center">
+    <h2 class="text-3xl font-semibold mb-4">Resume</h2>
+    <a href="assets/resume.pdf" target="_blank" class="text-teal-600 hover:underline">View My Resume</a>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+  <!-- Contact Section -->
+  <section id="contact" class="p-8 bg-gray-50 text-center">
+    <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+    <p class="mb-2">Email me at: <a href="mailto:your.email@example.com" class="text-teal-600 hover:underline">your.email@example.com</a></p>
     <p>
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      <a href="https://github.com/yourusername" target="_blank" class="text-teal-600 hover:underline">GitHub</a> |
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-teal-600 hover:underline">LinkedIn</a>
     </p>
   </section>
 
-  <footer>
-    <p>© 2025 Your Name</p>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-4 text-sm">
+    <p>© 2025 Yana</p>
   </footer>
+
 </body>
 </html>
